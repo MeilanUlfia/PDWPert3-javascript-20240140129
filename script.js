@@ -37,7 +37,6 @@ function changeShowcase(element, mediaSrc, title, desc) {
 
 function jamBerjalan() {
     let tanggal = new Date();
-    // Format tanggal yang lebih rapi
     document.getElementById("tanggal").innerHTML = tanggal.toLocaleString('id-ID'); 
 }
 
@@ -56,7 +55,8 @@ function tampil() {
 }
 
 function show() {
-    alert("Web ini dibuat oleh Meilan Ulfia Nurfari’ah untuk tugas Web Design Development.");
+    // Menambahkan nama lengkap kamu di perkenalan
+    alert("Halo! Web showcase ini dibuat oleh Meilan Ulfia Nurfari’ah."); 
 }
 
 function closeVideo() {
