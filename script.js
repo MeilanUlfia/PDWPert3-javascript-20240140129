@@ -2,7 +2,6 @@ function startAudio() {
     const thunderAudio = document.getElementById('thunder-audio');
     const soundBtn = document.getElementById('sound-btn');
     
-  
     if (thunderAudio.paused) {
         thunderAudio.volume = 0.5;
         thunderAudio.play();
@@ -16,7 +15,6 @@ function startAudio() {
         soundBtn.style.color = "#ffb703";
     }
 }
-
 
 function changeShowcase(element, mediaSrc, title, desc) {
     const mainVid = document.getElementById("main-video");
@@ -37,26 +35,19 @@ function changeShowcase(element, mediaSrc, title, desc) {
     element.classList.add('active');
 }
 
-Date();
-
-
 function jamBerjalan() {
     let tanggal = new Date();
-    
-    document.getElementById("tanggal").innerHTML = tanggal.toString(); 
+    // Format tanggal yang lebih rapi
+    document.getElementById("tanggal").innerHTML = tanggal.toLocaleString('id-ID'); 
 }
-
 
 document.addEventListener("DOMContentLoaded", function() {
     jamBerjalan(); 
     setInterval(jamBerjalan, 1000);
 });
 
-
 function tampil() {
-    
-    alert("Ini adalah button. Memulai pemutaran video spesial Zenitsu!");
-    
+    alert("Memulai pemutaran video spesial Zenitsu!");
     const modal = document.getElementById('video-modal');
     const specialVid = document.getElementById('special-video');
     
@@ -64,11 +55,9 @@ function tampil() {
     specialVid.play();
 }
 
-
 function show() {
-    alert("Ini adalah pop up untuk tulisan perkenalan. Web ini dibuat oleh Meilan.");
+    alert("Web ini dibuat oleh Meilan Ulfia Nurfari’ah untuk tugas Web Design Development.");
 }
-
 
 function closeVideo() {
     const modal = document.getElementById('video-modal');
